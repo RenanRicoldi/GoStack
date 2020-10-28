@@ -1,9 +1,10 @@
 //micro framework para o uso de rotas, middlewares 
 const express = require('express')
 const { uuid, isUuid } = require('uuidv4')
+const cors = require('cors')
 
 const app = express()
-
+app.use(cors()) // permite qualquer tipo de acesso
 // Diz ao express que vamos receber parâmetros em json
 app.use(express.json())
 
@@ -93,6 +94,6 @@ app.delete('/projects/:id', validateProjetId, (request, response) => {
 
 
 //ouve uma porta
-app.listen(8080, () => {
+app.listen(3000, () => {
     console.log('🚀 server listening!')
 })
