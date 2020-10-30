@@ -63,7 +63,7 @@ app.post('/projects', (request, response) => {
 
     projects.push(project)
 
-    return response.status(201).json(projects)
+    return response.status(201).json(project)
 
 })
 
@@ -94,6 +94,6 @@ app.delete('/projects/:id', validateProjetId, (request, response) => {
 
 
 //ouve uma porta
-app.listen(3000, () => {
+app.listen(3333, () => {
     console.log('🚀 server listening!')
 })
