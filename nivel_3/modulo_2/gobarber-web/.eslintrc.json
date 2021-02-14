@@ -21,12 +21,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/explicit-function-return-type": [
-            "error",
-            {
-                "allowExpressions": true
-            }
-        ],
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off",
         "indent": [
             "error",
             4
